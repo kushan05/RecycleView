@@ -14,6 +14,12 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView.Adapter adapter;
     private List<ListModel> listModels ;
 
+    private String selectCountry[] = {"Sri Lanka","India","Australia","pakistan",
+            "South africa","Ethiopia","America","uganda","China","new Zealand"};
+
+    private String selectCapital[] = {"sri J. kotte"," New Delhi","Canberra","Islamabad",
+            "Pretoria","Addis Ababa","Yerevan","Kampala","Beijing","Wellington"};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,9 +31,9 @@ public class MainActivity extends AppCompatActivity {
 
         listModels = new ArrayList<>();
 
-        for(int i=0;i<=10;i++){
+        for(int i=0;i<=9;i++){
             ListModel listModel = new ListModel(
-                "srilanka","galle");
+              selectCountry[i],selectCapital[i]);
             listModels.add(listModel);
         }
 
