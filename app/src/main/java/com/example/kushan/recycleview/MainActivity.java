@@ -39,5 +39,6 @@ public class MainActivity extends AppCompatActivity {
 
         adapter = new MyAdapter(listModels,this);
         recycle.setAdapter(adapter);
+
     }
 }

@@ -27,7 +27,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         View v = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.list_model, parent, false);
 
-        return new ViewHolder(v);
+        return new  ViewHolder(v);
 
     }
 
