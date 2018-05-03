@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         for(int i=0;i<=9;i++){
             ListModel listModel = new ListModel(
               selectCountry[i],selectCapital[i]);
-            listModels.add(listModel);
+              listModels.add(listModel);
         }
 
         adapter = new MyAdapter(listModels,this);
